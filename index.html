@@ -6,7 +6,19 @@
                 <td>Stop playing after "this long"</td><td></td>
             </tr>
             <tr>
-                <td>Loop from HH:MM:SS to HH:MM:SS</td><td></td>
+                <td>Loop from HH:MM:SS to HH:MM:SS</td><td><pre>
+timeStart = [00, 01, 00]; // HH:MM:SS.MSS
+timeEnd = [00, 02, 00];   // HH:MM:SS.MSS
+video = document.querySelector('video');
+YTE_intervalLoop = window.setInterval(() => {
+    timeS = timeStart[0] * 3600 + timeStart[1] * 60 + timeStart[0];
+    timeE = timeEnd[0] * 3600 + timeEnd[1] * 60 + timeEnd[0];
+    if (video.currentTime > timeE) video.currentTime = timeS;
+}, 500);
+                </pre></td>
+                <td><pre>
+clearInterval(YTE_intervalLoop);
+                </pre></td>
             </tr>
             <tr>
                 <td>Fade out over the next N minutes</td><td></td>
