@@ -11,8 +11,8 @@ timeStart = [00, 01, 00]; // HH:MM:SS.MSS
 timeEnd = [00, 02, 00];   // HH:MM:SS.MSS
 video = document.querySelector('video');
 YTE_intervalLoop = window.setInterval(() => {
-    timeS = timeStart[0] * 3600 + timeStart[1] * 60 + timeStart[0];
-    timeE = timeEnd[0] * 3600 + timeEnd[1] * 60 + timeEnd[0];
+    timeS = timeStart[0] * 3600 + timeStart[1] * 60 + timeStart[2];
+    timeE = timeEnd[0] * 3600 + timeEnd[1] * 60 + timeEnd[2];
     if (video.currentTime > timeE) video.currentTime = timeS;
 }, 500);
                 </pre></td>
