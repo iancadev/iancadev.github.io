@@ -24,3 +24,8 @@ When I rebooted, there was still no change.
 I tried installing Zorin as a dual-boot alongside Kali, but same issue.
 
 I then tried installing Zorin as the only OS on the drive, and it actually worked and booted up fine.
+
+So now I tried installing Kali as a dual-boot alongside Zorin. To try fixing some issues, I used dd instead of
+iso to set-up the LiveUSB with the 4GB live image instead of installer, which did resolve all the issues with the
+installation media. I resized the Zorin partition in Kali live and installed using the rest of the free space
+in the installer, and it worked. I can boot from Kali now...
