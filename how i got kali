@@ -1,0 +1,26 @@
+So, I tried installing Kali onto an external hard drive using a live image running in Virtual Box
+In order to get Virtual Box to mount the hard drive, I needed to format it in disk management
+
+Once I installed it, I tried booting it on the laptop. My Levovo laptop had a graphical bios, so when I
+tried booting it, it just frustratingly reloaded the boot setup page, no error displayed.
+Booting on a DELL desktop: it just showed some booting error.
+
+I tried setting up a Bodhi live image on the drive using unetbootin, and it wouldn't boot on the DELL
+(same error), but it would boot on a Thinkcenter m93p...
+
+I tried installing Kali using a LiveUSB (made with Rufus) onto the drive, but the first issue I encountered
+was actually 1. Kali not detecting the installation media (I had to unplug and plug back in the LiveUSB), and
+2. Kali not being able to verify the integrity of the installation media (I had to use the netinstaller instead).
+
+Once I did all that, I tried booting my Kali installation from the external drive and all I got was a blinking
+cursor instantly after booting. I tried messing with my BIOS settings (AHCI vs IDE, UEFI vs Legacy, boot order),
+but no changes.
+
+I loaded Zorin Lite 16.3 onto the LiveUSB to mount the drive and remove the "quiet" setting on the drive.
+https://askubuntu.com/questions/740253/how-to-install-grub-in-an-external-hard-drive
+https://askubuntu.com/questions/248/how-can-i-show-or-hide-boot-messages-when-ubuntu-starts
+When I rebooted, there was still no change.
+
+I tried installing Zorin as a dual-boot alongside Kali, but same issue.
+
+I then tried installing Zorin as the only OS on the drive, and it actually worked and booted up fine.
