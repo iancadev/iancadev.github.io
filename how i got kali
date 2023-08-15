@@ -35,3 +35,6 @@ Linux stories:
 https://askubuntu.com/questions/1412944/error-installing-mongodb-in-ubuntu-20-04
 https://askubuntu.com/questions/823288/mongodb-loads-but-breaks-returning-status-14
 To get mongosh working.
+
+https://easylinuxtipsproject.blogspot.com/p/grub.html#ID10
+because for some reason grub was being bypassed completely by Zorin...
